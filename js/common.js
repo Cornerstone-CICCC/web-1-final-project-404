@@ -1,11 +1,58 @@
 // header
 fetch("header.html")
 .then((response) => response.text())
-.then((data) => document.querySelector("body").insertAdjacentHTML('afterbegin', data));
+.then((data) => {
+    document.querySelector("body").insertAdjacentHTML('afterbegin', data);
+        // burguer menu //
+        //container
+        const buergerSec = document.querySelector("#Options_Burguer");
+        // container
+        const cont = document.createElement("div");
+        cont.classList.add("list");
+        // elements
+        const home = document.createElement("a");
+        home.textContent = "Home";
+        home.href = "#";
+        const mywork = document.createElement("a");
+        mywork.textContent = "Mywork";
+        mywork.href= "#";
+        const services = document.createElement("a");
+        services.textContent = "Services";
+        services.href = "#";
+        const clases = document.createElement("a");
+        clases.textContent = "Clases";
+        clases.href = "#";
+        const beauty = document.createElement("a");
+        beauty.textContent = "BeautyTips";
+        beauty.href = "#";
+        const about = document.createElement("a");
+        about.textContent = "About";
+        about.href = "#";
+        const contact = document.createElement("a");
+        contact.textContent = "Contac";
+        contact.href = "#";
+
+        //appede elements
+        cont.append(home,mywork,services,clases,beauty,about,contact)
+
+        // click event
+        const menu = document.querySelector("#action");
+
+        menu.addEventListener("click", () =>{
+            buergerSec.classList.toggle("active");
+            if(buergerSec.classList.contains("active")){
+                buergerSec.textContent = " ";
+            }
+            else{
+                buergerSec.append(cont);
+            }
+        });
+});
 // footer
 fetch("footer.html")
 .then((response) => response.text())
 .then((data) => document.querySelector("body").insertAdjacentHTML('beforeend', data));
+
 
 // Bootstrap
 function loadBootstrap() {
@@ -17,3 +64,7 @@ function loadBootstrap() {
 }
 // after page load add Bootstrap
 document.addEventListener('DOMContentLoaded', loadBootstrap);
+
+
+
+

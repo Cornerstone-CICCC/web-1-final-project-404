@@ -4,8 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-@use "generals";
-@use "header";
+@import "generals";
+@import "header";
+@import "footer";
 
 /* Home */
 
