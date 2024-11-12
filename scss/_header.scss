@@ -10,29 +10,30 @@
     height: 196px;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
     gap: 80px;
     .header_options{
         display: flex;
         flex-direction: row;
         width: 460px;
-        height: 20px;
+        height: auto;
         align-content: center;
         justify-content: space-between;
         gap: 1em;
-        li{
-            a{
-                text-decoration: none;
-                font-size: 20px;
-                font-weight: 400;
-                width: 100%;
-                border: none;
-                border-left: 1px solid $header_line;
-                color: $font_header_color;
-                padding-left: 2.5em;
-            }
-            .border_none{
-                border-left: none;
-            }
+        a{
+
+            border-left: 1px solid $header_line;
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 400;
+            border: none;
+            color: $font_header_color;
+        }
+        
+        .border_none{
+            border-left: none;
         }
     }
 
