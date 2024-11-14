@@ -60,7 +60,7 @@
         }
     }
     .logo{
-        margin-left: -20%;
+        margin-left: -10%;
         img{
             width: 96.25px;
             height: 100px;
@@ -71,9 +71,13 @@
 .list{
     display: flex;
     flex-direction: column;
-    margin: -2.5em 1em 1em 1em;
+    padding: 1em;
     width: auto;
+    background-color: $background;
     a{
+        background-color: $background;
+        font-size: 20px;
+        margin: 10px auto;
         width: 100px;
         text-decoration: none;
         color: $font_header_color;
