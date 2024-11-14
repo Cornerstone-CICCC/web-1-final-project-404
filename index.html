@@ -1,13 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+  </head>
+  <body>
+    <section id="contact">
+      <div class="contact-wrapper">
+        <div class="contact-header">
+          <h1>LET'S TALK</h1>
+          <p class="subtitle">
+            Check availability, pricing, and schedule a meeting for your special
+            day or our academy services.
+          </p>
+        </div>
+        <div class="form-container">
+          <div class="form-title">Services</div>
+          <form class="row g-3" id="contact-form">
+            <div class="col-12 event-type">
+              <label>Event Type</label>
+            </div>
+            <div class="form-check col-md-4">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault1"
+              />
+              <label class="form-check-label" for="flexRadioDefault1"
+                >Wedding</label
+              >
+            </div>
+            <div class="form-check col-md-4">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault2"
+              />
+              <label class="form-check-label" for="flexRadioDefault2"
+                >Wedding</label
+              >
+            </div>
+            <div class="form-check col-md-4">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault3"
+              />
+              <label class="form-check-label" for="flexRadioDefault3"
+                >Wedding</label
+              >
+            </div>
 
-    <script src="./js/common.js" defer></script>
-</body>
+            <div class="col-md-6">
+                <label>Event Date</label>
+                <div class="input-group">
+                    <input type="date" class="sub-label" placeholder="Select Date">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="date-undecided">
+                        <label for="date-undecided" class="sub-label">Not decided</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label>Event Time</label>
+                <div class="input-group sub-label">
+                    <select>
+                        <option>Full day</option>
+                        <option>Morning</option>
+                        <option>Afternoon</option>
+                    </select>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="time-undecided">
+                        <label for="time-undecided" class="sub-label">Not decided</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+              <label for="inputName" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control sub-label"
+                id="inputName"
+                placeholder="Your Name"
+              />
+            </div>
+            <div>
+              <label for="inputContact" class="form-label">Contact</label>
+                <div class="col-12 radio-group">
+                    <input type="radio" name="contact" id="call">
+                    <label for="call" class="sub-label">Call</label>
+                </div>
+                <div class="contact-input col-12">
+                    <input type="text" class="form-control sub-label" name="call" id="call" placeholder="Your mobile number">
+                </div>
+                <div class="col-12 radio-group">
+                    <input type="radio" name="contact" id="whatsapp">
+                    <label for="whatsapp" class="sub-label">WhatsApp</label>
+                </div>
+                <div class="col-12 radio-group">
+                    <input type="radio" name="contact" id="sms">
+                    <label for="sms" class="sub-label">SMS</label>
+                </div>
+                <div class="col-12 radio-group">
+                    <input type="radio" name="contact" id="email">
+                    <label for="email" class="sub-label">Email</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="submit-btn">Sign in</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="contact">
+        <div>
+            <h1>Let’s talk</h1>
+            <div>Check availability, pricing, and schedule a meeting for your special day or our academy services.</div>
+        </div>
+        <div class="inner_contact">
+            <div>Services</div>
+            <div>Event Type</div>
+            <div>
+                <input type="checkbox" name="wedding" checked />
+                <label>Wedding</label>
+            </div>
+            <div>
+                <input type="checkbox" name="party" checked />
+                <label>Party</label>
+            </div>
+            <div>
+                <input type="checkbox" name="photoshoot" checked />
+                <label>Photoshoot</label>
+            </div>
+            <label>
+                <span>Event Date</span>
+                <input type="date" name="hire_date" id="hire_date" required>
+            </label>
+            <label>
+                <span>Event Time</span>
+                <input type="time" id="appt" name="appt" min="09:00" max="18:00" required />
+            </label>
+            <div>Name</div>
+            <div>Contact</div>
+            <form id="contact-form">
+                <input type="hidden" name="contact_number">
+                <label>Name</label>
+                <input type="text" name="user_name">
+                <label>Email</label>
+                <input type="email" name="user_email">
+                <label>Message</label>
+                <textarea name="message"></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </section> -->
+    <script src="js/common.js"></script>
+    <script src="js/home.js"></script>
+  </body>
 </html>
