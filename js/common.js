@@ -15,7 +15,7 @@ fetch("header.html")
         home.href = "#";
         const mywork = document.createElement("a");
         mywork.textContent = "Mywork";
-        mywork.href= "#";
+        mywork.href= "";
         const services = document.createElement("a");
         services.textContent = "Services";
         services.href = "#";
@@ -41,10 +41,18 @@ fetch("header.html")
         menu.addEventListener("click", () =>{
             buergerSec.classList.toggle("active");
             if(buergerSec.classList.contains("active")){
-                buergerSec.textContent = " ";
+                buergerSec.innerHTML = " ";
             }
             else{
                 buergerSec.append(cont);
+            }
+        });
+
+        // se the size of the window
+        window.addEventListener("resize", () => {
+            if(window.innerWidth >= 1200 && !buergerSec.classList.contains("active")){
+                buergerSec.innerHTML = " ";
+                buergerSec.classList.remove("active");
             }
         });
 });
