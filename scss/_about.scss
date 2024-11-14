@@ -83,6 +83,7 @@ body {
 }
 
 .brands {
+  width: min(100vw, 100%);
   padding: 50px 20px;
   text-align: center;
   font-size: 48px;
@@ -95,6 +96,8 @@ body {
 }
 
 .brands h2 {
+  width: 100%;
+  text-align: center;
   font-size: 36px;
   font-weight: bold;
   color: #5b4a46;
@@ -106,7 +109,7 @@ body {
   gap: 44px;
   justify-items: center;
   align-items: center;
-  padding: 50px 268px 0px 268px;
+  // padding: 50px 268px 0px 268px;
 }
 
 .brands-logos img {
