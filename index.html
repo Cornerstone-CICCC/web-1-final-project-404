@@ -20,104 +20,78 @@
             day or our academy services.
           </p>
         </div>
-        <div class="form-container">
-          <div class="form-title">Services</div>
-          <form class="row g-3" id="contact-form">
-            <div class="col-12 event-type">
-              <label>Event Type</label>
+        <!--Form-->
+        <div class="form_container">
+          <h3>Services</h3>
+          <form>
+            <div>
+              <h4>Event Type</h4>
             </div>
-            <div class="form-check col-md-4">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="flexRadioDefault"
-                id="flexRadioDefault1"
-              />
-              <label class="form-check-label" for="flexRadioDefault1"
-                >Wedding</label
-              >
+            <div class="event">
+              <label  for="flexRadioDefault1">Wedding</label>
+              <input type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
             </div>
-            <div class="form-check col-md-4">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="flexRadioDefault"
-                id="flexRadioDefault2"
-              />
-              <label class="form-check-label" for="flexRadioDefault2"
-                >Wedding</label
-              >
+            <div class="event">
+              <label>Party</label>
+              <input type="radio" name="flexRadioDefault" id="flexRadioDefault2"/>
             </div>
-            <div class="form-check col-md-4">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="flexRadioDefault"
-                id="flexRadioDefault3"
-              />
-              <label class="form-check-label" for="flexRadioDefault3"
-                >Wedding</label
-              >
+            <div class="event">
+              <label for="flexRadioDefault3">Photoshoot</label>
+              <input type="radio" name="flexRadioDefault" id="flexRadioDefault3"/>
             </div>
-
-            <div class="col-md-6">
-                <label>Event Date</label>
-                <div class="input-group">
-                    <input type="date" class="sub-label" placeholder="Select Date">
-                    <div class="checkbox-group">
+            <div class="date">
+                <h4>Event Date</h4>
+                <div>
+                    <input type="date" class="yes_date">
+                    <div class="no_date">
                         <input type="checkbox" id="date-undecided">
-                        <label for="date-undecided" class="sub-label">Not decided</label>
+                        <label for="date-undecided">Not decided</label>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <label>Event Time</label>
-                <div class="input-group sub-label">
+            <div class="event_time">
+                <h4>Event Time</h4>
+                <div>
                     <select>
                         <option>Full day</option>
                         <option>Morning</option>
                         <option>Afternoon</option>
                     </select>
-                    <div class="checkbox-group">
+                    <div class="no_date">
                         <input type="checkbox" id="time-undecided">
-                        <label for="time-undecided" class="sub-label">Not decided</label>
+                        <label for="time-undecided">Not decided</label>
                     </div>
                 </div>
             </div>
-            <div class="col-12">
-              <label for="inputName" class="form-label">Name</label>
-              <input
-                type="text"
-                class="form-control sub-label"
-                id="inputName"
-                placeholder="Your Name"
-              />
-            </div>
             <div>
-              <label for="inputContact" class="form-label">Contact</label>
-                <div class="col-12 radio-group">
+              <h4 for="inputName">Name</h4>
+              <input type="text" id="inputName" placeholder="Your Name"/>
+            </div>
+            <div class="personal_info">
+              <h4 for="inputContact">Contact</h4>
+                <div>
                     <input type="radio" name="contact" id="call">
-                    <label for="call" class="sub-label">Call</label>
+                    <label for="call">Call</label>
                 </div>
-                <div class="contact-input col-12">
-                    <input type="text" class="form-control sub-label" name="call" id="call" placeholder="Your mobile number">
+                <div class="contact-input">
+                    <input type="text" name="call" id="call" placeholder="Your mobile number">
                 </div>
-                <div class="col-12 radio-group">
+                <div>
                     <input type="radio" name="contact" id="whatsapp">
-                    <label for="whatsapp" class="sub-label">WhatsApp</label>
+                    <label for="whatsapp">WhatsApp</label>
                 </div>
-                <div class="col-12 radio-group">
+                <div>
                     <input type="radio" name="contact" id="sms">
-                    <label for="sms" class="sub-label">SMS</label>
+                    <label for="sms">SMS</label>
                 </div>
-                <div class="col-12 radio-group">
+                <div>
                     <input type="radio" name="contact" id="email">
-                    <label for="email" class="sub-label">Email</label>
+                    <label for="email">Email</label>
                 </div>
               </div>
             </div>
-            <div class="col-12">
-              <button type="submit" class="submit-btn">Sign in</button>
+            <div>
+              <button type="submit">Submit</button>
             </div>
           </form>
         </div>

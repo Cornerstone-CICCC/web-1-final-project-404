@@ -40,75 +40,57 @@ p.subtitle {
 }
 
 /* Form Styles */
-.form-container {
-    padding: 60px 80px;
+.form_container{
     background-color: $section_background_color;
-    width: 100%;
-}
-.form-title {
-    text-align: center;
-    font-size: 20px;
-    color: #000000;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #7e6757;
-}
-.form-group {
-    margin-bottom: 20px;
-}
-label {
-    display: block;
-    color: #191919;
-    font-size: 20px;
-}
-.sub-label {
-    font-size: 10px;
-    font-family: Avenir;
-
-}
-input {
-    font-family: Avenir;
-}
-.input-group {
-    display: flex;
-    gap: 10px;
-}
-.input-group input[type="text"], .input-group select, .input-group input[type="date"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #B99692;
-    border-radius: 4px;
-    font-size: 1rem;
-}
-.checkbox-group {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-.radio-group {
-    display: flex;
-    margin-bottom: 10px;
-    gap: 5px;
-}
-
-.contact-input {
-    margin-bottom: 10px;
-}
-
-.event-type {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.submit-btn {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #7e6757;
-    color: #fff;
-    font-size: 1rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-align: center;
+    h3{
+        font-size: 1.8em;
+        text-align: center;
+        border-bottom: 1px solid black;
+        padding-bottom: .3em;
+    }
+    .event{
+        display: flex;
+        flex-direction: row;
+        margin: .3em 0;
+        justify-content: space-evenly;
+        background-color: $background;
+        padding: .5em 0;
+        label{
+            width: 80%;
+        }
+    }
+    .date{
+        div{
+            .yes_date{
+                width: 100%;
+                background-color: $background;
+                padding: .5em 0;
+                border: none;
+            }
+            .no_date{
+                display: flex;
+                flex-direction: row;
+                label{
+                    margin-left: 0.5em;
+                }
+            }
+        }
+    }
+    .event_time{
+        select{
+            width: 100%;
+        }
+        .no_date{
+            display: flex;
+            flex-direction: row;
+            label{
+                margin-left: 0.5em;
+            }
+        }
+    }
+    .personal_info{
+        button{
+            width: 100%;
+        }
+    }
 }
