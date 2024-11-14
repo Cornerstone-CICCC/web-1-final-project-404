@@ -10,7 +10,8 @@ footer{
             width: 80%;
             margin: 0 auto;
             .logo_img{
-                width: 30%;
+                max-width: 100%;
+                width: auto;
                 margin: 0 auto;
             }
             p{
