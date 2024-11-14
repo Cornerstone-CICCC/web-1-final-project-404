@@ -18,7 +18,6 @@ window.addEventListener("resize", () => {
         catalogP.style.display = "none";
     }
     if(window.innerWidth < 1200){
-        console.log(true)
         catalogD.style.display = "none";
         catalogP.style.display = "grid";
         
@@ -38,40 +37,28 @@ buttons.forEach(button => {
             button.classList.remove("active");
             buttons[1].classList.add("active");
             // images //
-            if(window.innerWidth > 1200){
                 if(makeupD.classList.contains("hide")){
                     makeupD.classList.add("show");
                     makeupD.classList.remove("hide");
                     hairD.classList.add("hide");
-                }
-            }
-            else{
-                if(makeup.classList.contains("hide")){
                     makeup.classList.add("show");
                     makeup.classList.remove("hide");
                     hair.classList.add("hide");
                 }
-            }
             
         }
         else if(button.textContent == "Hairstyle"){
             button.classList.remove("active");
             buttons[0].classList.add("active");
             // images //
-            if(window.innerWidth > 1200){
                 if(hairD.classList.contains("hide")){
                     hairD.classList.remove("hide");
                     makeupD.classList.add("hide");
                     makeupD.classList.remove("show");
-                }
-            }
-            else{
-                if(hair.classList.contains("hide")){
                     hair.classList.remove("hide");
                     makeup.classList.add("hide");
                     makeup.classList.remove("show")
                 }
-            }
         }
     })
 });
