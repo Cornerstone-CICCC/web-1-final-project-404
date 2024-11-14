@@ -17,11 +17,19 @@ window.addEventListener("resize", () => {
         catalogD.style.display = "grid";
         catalogP.style.display = "none";
     }
-    else{
+    if(window.innerWidth < 1200){
+        console.log(true)
         catalogD.style.display = "none";
         catalogP.style.display = "grid";
+        
     }
 })
+
+// if opened first in phone
+if(window.innerWidth < 1200){
+    catalogD.style.display = "none";
+    catalogP.style.display = "grid";
+}
 
 // add event listeners to the buttons
 buttons.forEach(button => { 
