@@ -22,76 +22,80 @@
         </div>
         <!--Form-->
         <div class="form_container">
-          <h3>Services</h3>
-          <form>
-            <div>
-              <h4>Event Type</h4>
-            </div>
-            <div class="event">
-              <label  for="flexRadioDefault1">Wedding</label>
-              <input type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
-            </div>
-            <div class="event">
-              <label>Party</label>
-              <input type="radio" name="flexRadioDefault" id="flexRadioDefault2"/>
-            </div>
-            <div class="event">
-              <label for="flexRadioDefault3">Photoshoot</label>
-              <input type="radio" name="flexRadioDefault" id="flexRadioDefault3"/>
-            </div>
-            <div class="date">
-                <h4>Event Date</h4>
-                <div>
-                    <input type="date" class="yes_date">
-                    <div class="no_date">
-                        <input type="checkbox" id="date-undecided">
-                        <label for="date-undecided">Not decided</label>
-                    </div>
-                </div>
-            </div>
-            <div class="event_time">
-                <h4>Event Time</h4>
-                <div>
-                    <select>
-                        <option>Full day</option>
-                        <option>Morning</option>
-                        <option>Afternoon</option>
-                    </select>
-                    <div class="no_date">
-                        <input type="checkbox" id="time-undecided">
-                        <label for="time-undecided">Not decided</label>
-                    </div>
-                </div>
-            </div>
-            <div>
-              <h4 for="inputName">Name</h4>
-              <input type="text" id="inputName" placeholder="Your Name"/>
-            </div>
-            <div class="personal_info">
-              <h4 for="inputContact">Contact</h4>
-                <div>
-                    <input type="radio" name="contact" id="call">
-                    <label for="call">Call</label>
-                </div>
-                <div class="contact-input">
-                    <input type="text" name="call" id="call" placeholder="Your mobile number">
-                </div>
-                <div>
-                    <input type="radio" name="contact" id="whatsapp">
-                    <label for="whatsapp">WhatsApp</label>
-                </div>
-                <div>
-                    <input type="radio" name="contact" id="sms">
-                    <label for="sms">SMS</label>
-                </div>
-                <div>
-                    <input type="radio" name="contact" id="email">
-                    <label for="email">Email</label>
-                </div>
+          <div class="delimiter">
+            <h3>Services</h3>
+            <form>
+              <div>
+                <h4>Event Type</h4>
               </div>
-            </div>
-            <div>
-              <button type="submit">Submit</button>
+              <div class="event">
+                <label  for="flexRadioDefault1">Wedding</label>
+                <input type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+              </div>
+              <div class="event">
+                <label>Party</label>
+                <input type="radio" name="flexRadioDefault" id="flexRadioDefault2"/>
+              </div>
+              <div class="event">
+                <label for="flexRadioDefault3">Photoshoot</label>
+                <input type="radio" name="flexRadioDefault" id="flexRadioDefault3"/>
+              </div>
+              <div class="date">
+                  <h4>Event Date</h4>
+                  <div>
+                      <input type="date" class="yes_date">
+                      <div class="no_date">
+                          <input type="checkbox" id="date-undecided">
+                          <label for="date-undecided">Not decided</label>
+                      </div>
+                  </div>
+              </div>
+              <div class="event_time">
+                  <h4>Event Time</h4>
+                  <div>
+                      <select>
+                          <option>Full day</option>
+                          <option>Morning</option>
+                          <option>Afternoon</option>
+                      </select>
+                      <div class="no_date">
+                          <input type="checkbox" id="time-undecided">
+                          <label for="time-undecided">Not decided</label>
+                      </div>
+                  </div>
+              </div>
+              <div class="personal_info">
+                <div>
+                  <h4 for="inputName">Name</h4>
+                  <input type="text" id="inputName" placeholder="Your Name"/>
+                </div>
+                <div>
+                  <h4 for="inputContact">Contact</h4>
+                    <div class="call_op">
+                        <input type="radio" name="contact" id="call">
+                        <label for="call">Call</label>
+                    </div>
+                    <div>
+                        <input type="text" name="call" id="call" placeholder="Your mobile number">
+                    </div>
+                    <div class="contact_op">
+                        <input type="radio" name="contact" id="whatsapp">
+                        <label for="whatsapp">WhatsApp</label>
+                    </div>
+                    <div class="contact_op">
+                        <input type="radio" name="contact" id="sms">
+                        <label for="sms">SMS</label>
+                    </div>
+                    <div class="contact_op">
+                        <input type="radio" name="contact" id="email">
+                        <label for="email">Email</label>
+                    </div>
+                  </div>
+              </div>    
+          </div>
+        </div>
+            <div class="button_S">
+              <button class="info_S" type="submit">Submit</button>
             </div>
           </form>
         </div>
