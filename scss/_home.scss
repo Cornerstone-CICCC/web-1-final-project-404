@@ -1,4 +1,5 @@
 @import 'generals';
+// PHONE VERSION //
 
 body {
     background-color: #F8F6F4;
@@ -328,7 +329,7 @@ body {
         }
     }
 }
-
+// DESKTOP VERSION //
 @media (min-width: $desktop) {
     /* Form Styles desktop */
     .contact-wrapper{
