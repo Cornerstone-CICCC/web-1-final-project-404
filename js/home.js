@@ -14,3 +14,10 @@ window.onload = function() {
             });
     });
 }
+
+// catch the size and then add the element 
+window.addEventListener("resize", () =>{
+    if(window.innerWidth < 1200){
+        console.log(true)
+    }
+})

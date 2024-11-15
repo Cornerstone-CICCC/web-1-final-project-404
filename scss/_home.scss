@@ -205,6 +205,159 @@ body {
         }
         }
     }
+    //
+    #make-hair {
+        padding: 100px 0;
+        .make-hair-header {
+            margin-bottom: 50px;
+            justify-items: center;
+            h1 {
+                font-size: 2.5em;
+                color: $font_header_color;
+                text-align: center;
+                margin-bottom: 10px;
+                letter-spacing: 8px;
+            }
+            hr {
+                width: 70%;
+                color: #E3B6B1;
+                opacity: 100%;
+            }
+            .subtitle {
+                text-align: center;
+                font-size: 18px;
+                font-family: Avenir;
+                color: #7e6757;
+                margin-top: 10px;
+                width: 80%;
+            }
+            button {
+                height: 50px;
+                margin-top: 20px;
+                padding: 0 24px;
+                color: #5e4a49;
+                background-color: transparent;
+                border: 1px solid #5e4a49;
+            }
+        }
+        .make-hair-img {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1em;
+            margin: 50px 0;
+            align-items: center;
+            .img-wrapper {
+                position: relative;
+                top: 0;
+                left: 0;
+                img {
+                    max-width: 300px;
+                    width: auto;
+                }
+                p {
+                    font-size: 3em;
+                    color: #FAE9E7;
+                    position: absolute;
+                    top: 80%;
+                    left: 8%;
+                    span {
+                        color: #FAE9E7;
+                    }
+                }
+                .wedding-p {
+                    font-size: 3em;
+                    top: 75%;
+                    left: 23%;
+                }
+            }
+            .party {
+                order: -1;
+            }
+        }
+        .makeup-101 {
+            margin: 0 auto;
+            padding: 50px 0px 0 0px;
+            width: 100%;
+            background-color: $section_background_color;
+            h1 {
+                margin: 0 auto;
+                width: 90%;
+                font-size: 2em;
+                color: $font_header_color;
+                text-align: center;
+                margin-bottom: 5px;
+                letter-spacing: 8px;
+            }
+            .makeup-101-inner {
+                margin: 0 auto;
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                .cont{
+                    width: 100%;
+                }
+                .owner{
+                    padding-top: 1em;
+                    width: 100%;
+                    margin: 0;
+                    img{
+                        max-width: 100%;
+                        width: auto;
+                    }
+                }
+                .item {
+                    margin: 30px 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    .item-title {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        p {
+                            text-align: center;
+                            font-size: 32px;
+                            color: $font_header_color;
+                        }
+                        img {
+                            width: auto;
+                            height: 30px;
+                            object-fit: contain;
+                        }
+                    }
+                    .subtitle {
+                        padding: 0 40px;
+                        text-align: center;
+                        font-size: 18px;
+                        font-family: Avenir;
+                        color: #000;
+                        text-align: left;
+                        width: 85%;
+                    }
+                    .vector {
+                        width: auto;
+                        height: 20px;
+                        object-fit: contain;
+                        margin-left: 50px;
+                    }
+                }
+                button {
+                    margin: 0 5%;
+                    width: 90%;
+                    height: 50px;
+                    padding: 0 24px;
+                    color: #5e4a49;
+                    background-color: transparent;
+                    border: 1px solid #5e4a49;
+                }
+            }
+        }
+    }
 }
 
 #contact {
@@ -476,28 +629,28 @@ body {
         padding: 100px 0;
         background-color: $section_background_color;
         .you-are-star-header {
-          margin-bottom: 50px;
-          justify-items: center;
-          h1 {
-            font-size: 80px;
-            color: $font_header_color;
-            text-align: center;
-            margin-bottom: 10px;
-            letter-spacing: 8px;
-          }
-          hr {
-            width: 10%;
-            color: #E3B6B1;
-            opacity: 100%;
-          }
-          .subtitle {
+            margin-bottom: 50px;
+            justify-items: center;
+            h1 {
+                font-size: 80px;
+                color: $font_header_color;
+                text-align: center;
+                margin-bottom: 10px;
+                letter-spacing: 8px;
+            }
+            hr {
+                width: 10%;
+                color: #E3B6B1;
+                opacity: 100%;
+            }
+        .subtitle {
             text-align: center;
             font-size: 18px;
             font-family: Avenir;
             color: #7e6757;
             margin-top: 10px;
             width: 40%;
-          }
+        }
           button {
             height: 50px;
             margin-top: 20px;
@@ -573,6 +726,7 @@ body {
             }
           .make-hair-img {
               display: flex;
+              flex-direction: row;
               justify-content: center;
               gap: 100px;
               margin: 100px 0;
@@ -620,15 +774,18 @@ body {
               .makeup-101-inner {
                   margin-top: 50px;
                   display: flex;
+                  flex-direction: row;
                   align-items: center;
                   gap: 100px;
                   .item {
                       margin: 30px 0;
                       display: flex;
+                      flex-direction: row;
                       align-items: center;
                       justify-content: space-between;
                       .item-title {
                           display: flex;
+                          flex-direction: row;
                           gap: 20px;
                           p {
                               font-size: 32px;
@@ -653,11 +810,12 @@ body {
                         }
                   }
                   button {
-                      height: 50px;
-                      padding: 0 24px;
-                      color: #5e4a49;
-                      background-color: transparent;
-                      border: 1px solid #5e4a49;
+                        height: 50px;
+                        padding: 5px 24px;
+                        color: #5e4a49;
+                        background-color: transparent;
+                        border: 1px solid #5e4a49;
+                        width: 20%;
                     }
               }
           }
@@ -683,7 +841,8 @@ body {
                   width: 100%;
                   display: grid;
                   grid-template-columns: repeat(3, 1fr);
-                  grid-template-rows: 1;
+                  grid-template-rows: 1fr;
+                  margin: 0 auto;
                   column-gap: 1em;
                   .event{
                       display: flex;
