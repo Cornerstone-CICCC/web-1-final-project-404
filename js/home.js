@@ -1,4 +1,9 @@
+// modal video
+$(function(){
+    $(".js-modal-btn").modalVideo();
+});
 
+// email
 (function() {
     emailjs.init('2UvQwli4N-kG1yMxe');
 })();

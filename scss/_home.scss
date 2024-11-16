@@ -453,18 +453,57 @@
                   }
             }
         }
+        .diy {
+            margin: 100px 0;
+            justify-items: center;
+            h1 {
+                font-size: 48px;
+                color: $font_header_color;
+                text-align: center;
+                margin-bottom: 10px;
+                letter-spacing: 8px;
+            }
+            .video-wrapper {
+                margin: 50px 0;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                gap: 40px;
+                img {
+                    cursor : pointer;
+                }
+            }
+            button {
+                height: 50px;
+                padding: 0 24px;
+                color: #5e4a49;
+                background-color: transparent;
+                border: 1px solid #5e4a49;
+            }
+        }
     }
 }
 
 
 /* Form Styles desktop */
 .contact-wrapper{
-    h1{
-        font-size: 3.2em;
-    }
-    p{
-        margin: 0 20%;
-        padding-bottom: 1em;
+    .contact-header {
+        width: 60%;
+        justify-items: center;
+        h1 {
+            font-size: 80px;
+            color: $font_header_color;
+            text-align: center;
+            letter-spacing: 8px;
+          }
+          .subtitle {
+            text-align: center;
+            font-size: 18px;
+            font-family: Avenir;
+            color: #7e6757;
+            margin: 50px 0;
+            width: 70%;
+          }
     }
     .form_container{
         width: 60%;
