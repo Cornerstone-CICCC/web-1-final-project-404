@@ -651,237 +651,231 @@ body {
             margin-top: 10px;
             width: 40%;
         }
-          button {
-            height: 50px;
-            margin-top: 20px;
-            padding: 0 24px;
-            color: #5e4a49;
-            background-color: transparent;
-            border: 1px solid #5e4a49;
-          }
+        button {
+          height: 50px;
+          margin-top: 20px;
+          padding: 0 24px;
+          color: #5e4a49;
+          background-color: transparent;
+          border: 1px solid #5e4a49;
         }
-        .star-img {
-          display: flex;
-          overflow-x: scroll;
+      }
+      .star-img {
+        display: flex;
+        overflow-x: scroll;
+        img {
+          margin: 0 10px;
+        }
+      }
+      .contents-detail {
+        margin-top: 50px;
+        justify-items: center;
+        .quote {
+          width: 32px;
+          height: auto;
+        }
+        p {
+          margin-top: 30px;
+          width: 60%;
+          text-align: center;
+          font-size: 32px;
+          color: #191919;
+        }
+        .scroll-contents {
+          margin-top: 30px;
           img {
-            margin: 0 10px;
-          }
-        }
-        .contents-detail {
-          margin-top: 50px;
-          justify-items: center;
-          .quote {
-            width: 32px;
-            height: auto;
-          }
-          p {
-            margin-top: 30px;
-            width: 60%;
-            text-align: center;
-            font-size: 32px;
-            color: #191919;
-          }
-          .scroll-contents {
-            margin-top: 30px;
-            img {
-              margin: 0 30px;
-            }
+            margin: 0 30px;
           }
         }
       }
-  
-      #make-hair {
-          padding: 100px 0;
-          .make-hair-header {
-              margin-bottom: 50px;
-              justify-items: center;
-              h1 {
+    }
+
+    #make-hair {
+        padding: 100px 0;
+        .make-hair-header {
+            margin-bottom: 50px;
+            justify-items: center;
+            h1 {
+              font-size: 80px;
+              color: $font_header_color;
+              text-align: center;
+              margin-bottom: 10px;
+              letter-spacing: 8px;
+            }
+            hr {
+              width: 10%;
+              color: #E3B6B1;
+              opacity: 100%;
+            }
+            .subtitle {
+              text-align: center;
+              font-size: 18px;
+              font-family: Avenir;
+              color: #7e6757;
+              margin-top: 10px;
+              width: 40%;
+            }
+            button {
+              height: 50px;
+              margin-top: 20px;
+              padding: 0 24px;
+              color: #5e4a49;
+              background-color: transparent;
+              border: 1px solid #5e4a49;
+            }
+          }
+        .make-hair-img {
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            margin: 100px 0;
+            align-items: center;
+            .img-wrapper {
+                position: relative;
+                top: 0;
+                left: 0;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+                p {
+                    font-size: 65px;
+                    color: #FAE9E7;
+                    position: absolute;
+                    top: 70%;
+                    left: -15%;
+                    span {
+                        color: #B99692;
+                    }
+                }
+                .wedding-p {
+                    font-size: 84px;
+                    top: 75%;
+                    left: -20%;
+                }
+            }
+            .party {
+                order: -1;
+            }
+        }
+        .makeup-101 {
+            margin: 0 auto;
+            padding: 50px 100px;
+            width: 90%;
+            background-color: $section_background_color;
+            h1 {
                 font-size: 80px;
                 color: $font_header_color;
                 text-align: center;
                 margin-bottom: 10px;
                 letter-spacing: 8px;
-              }
-              hr {
-                width: 10%;
-                color: #E3B6B1;
-                opacity: 100%;
-              }
-              .subtitle {
-                text-align: center;
-                font-size: 18px;
-                font-family: Avenir;
-                color: #7e6757;
-                margin-top: 10px;
-                width: 40%;
-              }
-              button {
-                height: 50px;
-                margin-top: 20px;
-                padding: 0 24px;
-                color: #5e4a49;
-                background-color: transparent;
-                border: 1px solid #5e4a49;
-              }
             }
-          .make-hair-img {
-              display: flex;
-              flex-direction: row;
-              justify-content: center;
-              gap: 100px;
-              margin: 100px 0;
-              align-items: center;
-              .img-wrapper {
-                  position: relative;
-                  top: 0;
-                  left: 0;
-                  img {
-                      width: 100%;
-                      height: auto;
-                  }
-                  p {
-                      font-size: 65px;
-                      color: #FAE9E7;
-                      position: absolute;
-                      top: 70%;
-                      left: -15%;
-                      span {
-                          color: #B99692;
-                      }
-                  }
-                  .wedding-p {
-                      font-size: 84px;
-                      top: 75%;
-                      left: -20%;
-                  }
-              }
-              .party {
-                  order: -1;
-              }
-          }
-          .makeup-101 {
-              margin: 0 auto;
-              padding: 50px 100px;
-              width: 90%;
-              background-color: $section_background_color;
-              h1 {
-                  font-size: 80px;
-                  color: $font_header_color;
-                  text-align: center;
-                  margin-bottom: 10px;
-                  letter-spacing: 8px;
-              }
-              .makeup-101-inner {
-                  margin-top: 50px;
-                  display: flex;
-                  flex-direction: row;
-                  align-items: center;
-                  gap: 100px;
-                  .item {
-                      margin: 30px 0;
-                      display: flex;
-                      flex-direction: row;
-                      align-items: center;
-                      justify-content: space-between;
-                      .item-title {
-                          display: flex;
-                          flex-direction: row;
-                          gap: 20px;
-                          p {
-                              font-size: 32px;
-                              color: $font_header_color;
-                          }
-                          img {
-                              width: auto;
-                              height: 30px;
-                              object-fit: contain;
-                          }
-                      }
-                      .subtitle {
-                          font-size: 18px;
-                          font-family: Avenir;
-                          color: #000;
+            .makeup-101-inner {
+                margin-top: 50px;
+                display: flex;
+                align-items: center;
+                gap: 100px;
+                .item {
+                    margin: 30px 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .item-title {
+                        display: flex;
+                        gap: 20px;
+                        p {
+                            font-size: 32px;
+                            color: $font_header_color;
                         }
-                        .vector {
-                          width: auto;
-                          height: 20px;
-                          object-fit: contain;
-                          margin-left: 50px;
+                        img {
+                            width: auto;
+                            height: 30px;
+                            object-fit: contain;
                         }
-                  }
-                  button {
-                        height: 50px;
-                        padding: 5px 24px;
-                        color: #5e4a49;
-                        background-color: transparent;
-                        border: 1px solid #5e4a49;
-                        width: 20%;
                     }
-              }
-          }
-      }
-  }
-  
-  
-  /* Form Styles desktop */
-  .contact-wrapper{
-      h1{
-          font-size: 3.2em;
-      }
-      p{
-          margin: 0 20%;
-          padding-bottom: 1em;
-      }
-      .form_container{
-          width: 60%;
-          .delimiter{
-              margin: 2em;
-              background-color: $section_background_color;
-              .row{
-                  width: 100%;
-                  display: grid;
-                  grid-template-columns: repeat(3, 1fr);
-                  grid-template-rows: 1fr;
-                  margin: 0 auto;
-                  column-gap: 1em;
-                  .event{
-                      display: flex;
-                      flex-direction: row;
-                      margin: .3em 0;
-                      justify-content: space-evenly;
-                      background-color: $background;
-                      padding: .5em 0;
-                      label{
-                          width: 80%;
-                          font-size: 1.3em;
+                    .subtitle {
+                        font-size: 18px;
+                        font-family: Avenir;
+                        color: #000;
                       }
+                      .vector {
+                        width: auto;
+                        height: 20px;
+                        object-fit: contain;
+                        margin-left: 50px;
+                      }
+                }
+                button {
+                    height: 50px;
+                    padding: 0 24px;
+                    color: #5e4a49;
+                    background-color: transparent;
+                    border: 1px solid #5e4a49;
                   }
-              }
-              .event_info{
-                  display: grid;
-                  grid-template-columns: repeat(2, 1fr);
-                  grid-template-rows: 1;
-                  column-gap: 1em;
-                  }
-              }
-          .personal_info{
-              div{
-                  input{
-                      width: 100%;
-                      padding: .8em;
-                      background-color: $background;
-                  }
-              }
-          }
-      }
-      .button_S{
-          width: 60%;
-          .info_S{
-              width: 20%;
-              font-size: 1.2em;
-          }
-      }
-  
-  }
-  
-  }
+            }
+        }
+    }
+}
+
+
+/* Form Styles desktop */
+.contact-wrapper{
+    h1{
+        font-size: 3.2em;
+    }
+    p{
+        margin: 0 20%;
+        padding-bottom: 1em;
+    }
+    .form_container{
+        width: 60%;
+        .delimiter{
+            margin: 2em;
+            background-color: $section_background_color;
+            .row{
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 1;
+                column-gap: 1em;
+                .event{
+                    display: flex;
+                    flex-direction: row;
+                    margin: .3em 0;
+                    justify-content: space-evenly;
+                    background-color: $background;
+                    padding: .5em 0;
+                    label{
+                        width: 80%;
+                        font-size: 1.3em;
+                    }
+                }
+            }
+            .event_info{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 1;
+                column-gap: 1em;
+                }
+            }
+        .personal_info{
+            div{
+                input{
+                    width: 100%;
+                    padding: .8em;
+                    background-color: $background;
+                }
+            }
+        }
+    }
+    .button_S{
+        width: 60%;
+        .info_S{
+            width: 20%;
+            font-size: 1.2em;
+        }
+    }
+
+}
+
+}
