@@ -12,10 +12,10 @@ fetch("header.html")
         // elements
         const home = document.createElement("a");
         home.textContent = "Home";
-        home.href = "#";
+        home.href = "../index.html";
         const mywork = document.createElement("a");
         mywork.textContent = "Mywork";
-        mywork.href= "";
+        mywork.href= "../portfolio.html";
         const services = document.createElement("a");
         services.textContent = "Services";
         services.href = "#";
@@ -29,7 +29,7 @@ fetch("header.html")
         about.textContent = "About";
         about.href = "#";
         const contact = document.createElement("a");
-        contact.textContent = "Contac";
+        contact.textContent = "Contact";
         contact.href = "#";
 
         //appede elements
@@ -72,7 +72,3 @@ function loadBootstrap() {
 }
 // after page load add Bootstrap
 document.addEventListener('DOMContentLoaded', loadBootstrap);
-
-
-
-

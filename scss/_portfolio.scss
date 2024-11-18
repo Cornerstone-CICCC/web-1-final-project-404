@@ -1,0 +1,207 @@
+@import "generals";
+
+.portfolio{
+    text-align: center;
+    background-color: $portfolio_background;
+    h1{
+        color: $font_header_color;
+        padding-top: 1em;
+        background-color: $portfolio_background;
+    }
+    hr{
+        width: 40%;
+        height: 1.5px;
+        margin: 0 auto;
+        color: $header_line;
+        margin-bottom: 1em;
+    }
+    .portfolio_text{
+        margin: 0 10%;
+        p{
+            background-color: $portfolio_background;
+        }
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+        background-color: $portfolio_background;
+        .portfolio_options{
+            padding: 1em 0;
+            background-color: $portfolio_background;
+            display: flex;
+            flex-direction: row;
+            gap: 1.5em;
+            justify-content: center;
+            .options{
+                background-color: $portfolio_background;
+                font-size: 1.3em;
+                border-bottom: 1px solid $header_line;
+                opacity: 1;
+                &.active{
+                    opacity: .5;
+                }
+            }
+        }
+        .phone{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            background-color: $portfolio_background;
+            padding-bottom: 1.5em;
+            overflow: hidden;
+            div{
+                margin: 0 auto;
+                width: 100%;
+                height: auto;
+                background-color: $portfolio_background;
+                &.hide{
+                    animation: fade_out .3s linear forwards ;
+                    -webkit-animation: fade_out .3s linear forwards ;
+                }
+                &.show{
+                    animation: fade_in .3s linear forwards;
+                    -webkit-animation: fade_in .3s linear forwards;
+                }
+                div{
+                    margin: 1em auto;
+                    img{
+                        max-width: 100%;
+                        width: auto;
+                    }
+                }
+            }
+            .P_View_More{
+                margin: 0 auto;
+                margin-top: .5em;
+                width: 40%;
+                padding: .8em;
+                background-color: $portfolio_background;
+                border: 1px solid $font_header_color;
+                color: $font_header_color;
+            }
+        }
+    }
+}
+
+// for the animation
+@keyframes fade_out {
+    0%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 0;
+        display: grid;
+    }
+    100%{
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes fade_in {
+    0%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 1;
+        display: none;
+    }
+    100%{
+        opacity: 1;
+        display: grid;
+    }
+}
+
+@media (min-width: $desktop) {
+    .portfolio{
+        h1{
+            color: $font_header_color;
+            padding:0;
+            font-size:100px;
+        }
+        hr{
+            width: 20%;
+            margin: 0 auto;
+            color: $header_line;
+            margin-bottom: 1em;
+        }
+        .portfolio_text{
+            margin: 0 30%;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            background-color: $portfolio_background;
+            .portfolio_options{
+                padding: 1em 0;
+                background-color: $portfolio_background;
+                display: flex;
+                flex-direction: row;
+                gap: 1.5em;
+                justify-content: center;
+                .options{
+                    background-color: $portfolio_background;
+                    font-size: 2em;
+                    border-bottom: 1px solid $header_line;
+                    opacity: 1;
+                    &.active{
+                        opacity: .5;
+                    }
+                }
+            }
+            .phone{
+                display: none;
+                width: 0;
+                height: 0;               
+            }
+            .desktop_catalog{
+                width: 100%;
+                height: auto;
+                background-color: $portfolio_background;
+                padding-bottom: 1.5em;
+                overflow: hidden;
+                padding-bottom: 2em;
+                display: block;
+                .desktop{
+                    margin: 0 auto;
+                    width: 100%;
+                    height: auto;
+                    background-color: $portfolio_background;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: auto;
+                    row-gap: 1em;
+                        &.hide{
+                            animation: fade_out .3s linear forwards ;
+                            -webkit-animation: fade_out .3s linear forwards ;
+                        }
+                        &.show{
+                            animation: fade_in .3s linear forwards;
+                            -webkit-animation: fade_in .3s linear forwards;
+                        }
+                    div{
+                        padding: 0;
+                        background-color: $portfolio_background;
+                        margin: 0;
+                        width: auto;
+                        align-items: center;
+                        img{
+                            width: 22em;
+                            height: 22em;
+                        }
+                    }
+                }
+            }
+            .P_View_More{
+                margin: 0 auto;
+                margin-top: 1.5em;
+                width: 20%;
+                padding: .8em;
+                background-color: $portfolio_background;
+                border: 1px solid $font_header_color;
+                color: $font_header_color;
+            }
+        }
+    }
+}
