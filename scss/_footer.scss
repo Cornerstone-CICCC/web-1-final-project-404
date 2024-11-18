@@ -46,11 +46,15 @@ footer{
             padding-top: 1em;
             color: $font_header_color;
             background-color: $portfolio_background;
-            p{
+            row-gap: 2em;
+            a{
+                text-decoration: none;
                 margin: 0;
                 padding: 0;
                 padding: .3em 0;
                 background-color: $portfolio_background;
+                color: $font_header_color;
+                font-size: 1.5em;
             }
         }
         .options_link p:nth-child(1) {
@@ -121,8 +125,9 @@ footer{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                align-content: center;
                 width: 60%;
+                margin: -1em auto 0 auto;
+                align-items: center;
             }
         }
     }
