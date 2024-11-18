@@ -1,8 +1,9 @@
 @import "generals";
 
 footer{
-    background-color: $background;
+    background-color: $portfolio_background;
     div{
+        background-color: $portfolio_background;
         width: 100%;
         .links{
             display: flex;
@@ -13,9 +14,11 @@ footer{
                 max-width: 100%;
                 width: auto;
                 margin: 0 auto;
+                background-color: $portfolio_background;
             }
             p{
                 font-size: 1em;
+                background-color: $portfolio_background;
             }
             .socials{
                 margin: 1em auto;
@@ -23,6 +26,10 @@ footer{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
+                background-color: $portfolio_background;
+                img{
+                    background-color: $portfolio_background;
+                }
             }
         }
         hr{
@@ -32,22 +39,60 @@ footer{
         .options_link{
             width: 80%;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(4, 1fr);
             margin: 0 auto;
             text-align: center;
             padding-top: 1em;
             color: $font_header_color;
+            background-color: $portfolio_background;
             p{
                 margin: 0;
                 padding: 0;
                 padding: .3em 0;
+                background-color: $portfolio_background;
             }
+        }
+        .options_link p:nth-child(1) {
+            grid-row: 1;
+            grid-column: 1;
+        }
+        
+        .options_link p:nth-child(2) {
+        grid-row: 2;
+        grid-column: 1;
+        }
+        
+        .options_link p:nth-child(3) {
+        grid-row: 3;
+        grid-column: 1;
+        }
+        
+        .options_link p:nth-child(4) {
+        grid-row: 4;
+        grid-column: 1;
+        }
+        
+        .options_link p:nth-child(5) {
+        grid-row: 1;
+        grid-column: 2;
+        }
+        
+        .options_link p:nth-child(6) {
+        grid-row: 2;
+        grid-column: 2;
+        }
+        
+        .options_link p:nth-child(7) {
+        grid-row: 3;
+        grid-column: 2;
         }
         p{
             text-align: center;
             color: $font_header_color;
             margin: 1em;
+            background-color: $portfolio_background;
+            padding-bottom: 2em;
         }
     }
 }

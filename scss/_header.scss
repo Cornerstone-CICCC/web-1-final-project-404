@@ -1,6 +1,10 @@
 @import "generals";
+header{
+    background-color: $portfolio_background;
+}
 
 .header{
+    background-color: $portfolio_background;
     padding: 4px 16px;
     display: flex;
     flex-direction: row;
@@ -10,6 +14,7 @@
     align-items: center;
     margin: 0 auto;
     .header_center{
+        background-color: $portfolio_background;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -23,10 +28,12 @@
                 img{
                     width: 40px;
                     height: 40px;
+                    background-color: $portfolio_background;
                 }
             }
         }
         .header_options{
+            background-color: $portfolio_background;
             flex-direction: column;
             width: auto;
             height: auto;
@@ -35,6 +42,7 @@
             gap: 1em;
             a{
                 display: none;
+                background-color: $portfolio_background;
                 border-left: 1px solid $header_line;
                 width: 100%;
                 text-align: center;
@@ -49,7 +57,9 @@
                 display: block;
                 width: 40px;
                 height: 40px;
-                .logi_Ins{
+                background-color: $portfolio_background;
+                .logo_Ins{
+                    background-color: $portfolio_background;
                     width: 40px;
                 }
             }
@@ -61,9 +71,11 @@
     }
     .logo{
         margin-left: -10%;
+        background-color: $portfolio_background;
         img{
             width: 96.25px;
             height: 100px;
+            background-color: $portfolio_background;
         }
     }
 }
@@ -71,13 +83,11 @@
 .list{
     display: flex;
     flex-direction: column;
-    padding: 1em;
     width: auto;
-    background-color: $background;
+    text-align: center;
     a{
-        background-color: $background;
+        margin: .5em auto;
         font-size: 20px;
-        margin: 10px auto;
         width: 100px;
         text-decoration: none;
         color: $font_header_color;
