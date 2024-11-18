@@ -1,7 +1,7 @@
 @import "generals";
 // home phone version
 body {
-    background-color: $section_background_color;
+    background-color: #F8F6F4;
     #top {
         .top-img {
             position: relative;
@@ -210,7 +210,6 @@ body {
     //
     #make-hair {
         padding: 100px 0 40px 0;
-        background-color: $section_background_color;
         .make-hair-header {
             margin-bottom: 50px;
             justify-items: center;
@@ -389,7 +388,7 @@ body {
         button{
             margin: 1em;
             padding: 1em 1.5em;
-            background: $section_background_color;
+            background: transparent;
             color: $font_header_color;
             border: 1px solid $font_header_color;
         }
@@ -403,7 +402,6 @@ body {
 
 /* Form Styles */
 .contact-wrapper {
-    background-color: $section_background_color;
     padding-top: 4em;
     width: 100%;
     margin: 0 auto;
@@ -561,33 +559,32 @@ body {
 // DESKTOP VERSION //
 @media (min-width: $desktop) {
     body {
-        background-color: $section_background_color;
-    #top {
-        .top-img {
-            position: relative;
-            top: 0;
-            left: 0;
-        img {
-            clip-path: inset(0% 0% 0% 0% );
-            width: 100%;
-            height: auto;
-        }
-        }
-        .on-img {
-            position: absolute;
-            top: 60%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            img {
-                width: 20%;
+        background-color: #F8F6F4;
+        #top {
+            .top-img {
+              position: relative;
+              top: 0;
+              left: 0;
+              img {
+                width: 100%;
                 height: auto;
+              }
             }
-            p {
+            .on-img {
+              position: absolute;
+              top: 60%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              text-align: center;
+              img {
+                width: 100%;
+                height: auto;
+              }
+              p {
                 margin-top: 20px;
                 font-family: Avenir;
                 color: #fff;
-            }
+              }
             button {
                 margin-top: 20px;
                 padding: 18px 32px;
@@ -599,7 +596,6 @@ body {
     }
     #about {
         margin: 0 auto;
-        background-color: $section_background_color;
         .about-inner {
             margin: 0 auto;
             width: 60%;
@@ -901,7 +897,7 @@ body {
             flex-direction: row;
             justify-content: center;
             button{
-                background-color: $section_background_color;
+                background-color: transparent;
                 padding: 1em  1.5em;
                 color: $font_header_color;
                 border: 1px solid $font_header_color;
@@ -912,13 +908,23 @@ body {
 
     /* Form Styles desktop */
     .contact-wrapper{
-        background-color: $section_background_color;
-        h1{
-            font-size: 3.2em;
-        }
-        p{
-            margin: 0 20%;
-            padding-bottom: 1em;
+        .contact-header {
+            width: 60%;
+            justify-items: center;
+            h1 {
+                font-size: 80px;
+                color: $font_header_color;
+                text-align: center;
+                letter-spacing: 8px;
+              }
+              .subtitle {
+                text-align: center;
+                font-size: 18px;
+                font-family: Avenir;
+                color: #7e6757;
+                margin: 50px 0;
+                width: 70%;
+              }
         }
         .form_container{
             width: 60%;
