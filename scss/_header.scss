@@ -91,14 +91,16 @@ header{
     flex-direction: column;
     width: auto;
     text-align: center;
-    a{
+    a,div{
         margin: .5em auto;
         font-size: 20px;
         width: 100px;
         text-decoration: none;
         color: $font_header_color;
-        &:hover{
-            background-color: darkgray;
+    }
+    div{
+        img{
+            margin: 0 .2em;
         }
     }
 }

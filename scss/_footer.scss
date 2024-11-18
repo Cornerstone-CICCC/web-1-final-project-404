@@ -22,13 +22,14 @@ footer{
             }
             .socials{
                 margin: 1em auto;
-                width: 40%;
+                width: 80%;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 background-color: $portfolio_background;
                 img{
                     background-color: $portfolio_background;
+                    width: 40px;
                 }
             }
         }
