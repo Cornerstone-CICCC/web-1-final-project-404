@@ -72,7 +72,3 @@ function loadBootstrap() {
 }
 // after page load add Bootstrap
 document.addEventListener('DOMContentLoaded', loadBootstrap);
-
-
-
-
