@@ -1,7 +1,7 @@
 @import "generals";
 // home phone version
 body {
-    background-color: #f8f6f4;
+    background-color: $section_background_color;
     #top {
         .top-img {
             position: relative;
@@ -176,10 +176,12 @@ body {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1;
         overflow-x: hidden;
-        margin: 0 auto;
+        margin: 1em;
+        row-gap: 1em;
+        column-gap: 1em;
         img {
-            max-width: 90%;
-            width: auto;
+            width: 100%;
+            height: 100%;
             margin: 0 auto;
         }
     }
@@ -207,7 +209,8 @@ body {
     }
     //
     #make-hair {
-        padding: 100px 0;
+        padding: 100px 0 40px 0;
+        background-color: $section_background_color;
         .make-hair-header {
             margin-bottom: 50px;
             justify-items: center;
@@ -303,7 +306,9 @@ body {
                 .owner{
                     padding-top: 1em;
                     width: 100%;
-                    margin: 0;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
                     img{
                         max-width: 100%;
                         width: auto;
@@ -331,13 +336,13 @@ body {
                         }
                     }
                     .subtitle {
-                        padding: 0 40px;
-                        text-align: center;
+                        padding: 8px;
+                        text-align: left;
                         font-size: 18px;
                         font-family: Avenir;
                         color: #000;
                         text-align: left;
-                        width: 85%;
+                        width: 100%;
                     }
                     .vector {
                         width: auto;
@@ -360,6 +365,37 @@ body {
     }
 }
 
+.diy{
+    h1{
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
+        color: $font_header_color;
+        border-bottom: 1px solid $font_header_color;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+    .video-wrapper{
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        gap: 10px;
+    }
+    div{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        button{
+            margin: 1em;
+            padding: 1em 1.5em;
+            background: $section_background_color;
+            color: $font_header_color;
+            border: 1px solid $font_header_color;
+        }
+    }
+}
+
 #contact {
     margin: 0 auto;
     padding: 0;
@@ -367,6 +403,7 @@ body {
 
 /* Form Styles */
 .contact-wrapper {
+    background-color: $section_background_color;
     padding-top: 4em;
     width: 100%;
     margin: 0 auto;
@@ -403,25 +440,30 @@ body {
         padding-bottom: 0.2em;
         font-size: 2em;
         }
-        .event {
-        display: flex;
-        flex-direction: row;
-        margin: 0.3em 0;
-        justify-content: space-evenly;
-        background-color: $background;
-        padding: 0.5em 0;
-        label {
-            width: 80%;
-            font-size: 1.3em;
+        .row{
+            padding: .6em;
         }
+        .event {
+            display: flex;
+            flex-direction: row;
+            margin: 0.3em 0;
+            justify-content: space-evenly;
+            background-color: $section_background_color;
+            padding: 0.5em 0;
+            border: 1px solid $font_header_color;
+            label {
+                background-color: $section_background_color;
+                width: 80%;
+                font-size: 1.3em;
+            }
         }
         .date {
         div {
             .yes_date {
             width: 100%;
-            background-color: $background;
+            background-color: $section_background_color;
+            border: 1px solid $font_header_color;
             padding: 0.5em 0;
-            border: none;
             }
             .no_date {
             padding-top: 1em;
@@ -440,9 +482,10 @@ body {
     }
         .event_time {
             select {
-            padding: 0.8em;
-            background-color: $background;
-            width: 100%;
+                padding: 0.8em;
+                background-color: $section_background_color;
+                border: 1px solid $font_header_color;
+                width: 100%;
             }
         .no_date {
             padding-top: 1em;
@@ -464,7 +507,8 @@ body {
             input {
             width: 100%;
             padding: 0.8em;
-            background-color: $background;
+            background-color: $section_background_color;
+            border: 1px solid $font_header_color;
             }
         }
         .call_op {
@@ -517,7 +561,7 @@ body {
 // DESKTOP VERSION //
 @media (min-width: $desktop) {
     body {
-        background-color: #f8f6f4;
+        background-color: $section_background_color;
     #top {
         .top-img {
             position: relative;
@@ -554,11 +598,13 @@ body {
         }
     }
     #about {
-        margin: 50px auto;
+        margin: 0 auto;
+        background-color: $section_background_color;
         .about-inner {
             margin: 0 auto;
             width: 60%;
             display: flex;
+            flex-direction: row;
             .about-img {
                 height: auto;
                 width: 40%;
@@ -652,42 +698,42 @@ body {
             width: 40%;
         }
         button {
-          height: 50px;
-          margin-top: 20px;
-          padding: 0 24px;
-          color: #5e4a49;
-          background-color: transparent;
-          border: 1px solid #5e4a49;
+            height: 50px;
+            margin-top: 20px;
+            padding: 0 24px;
+            color: #5e4a49;
+            background-color: transparent;
+            border: 1px solid #5e4a49;
         }
-      }
-      .star-img {
-        display: flex;
-        overflow-x: scroll;
-        img {
-          margin: 0 10px;
-        }
-      }
-      .contents-detail {
+    }
+    .star-img {
+            display: flex;
+            overflow-x: scroll;
+            img {
+            margin: 0 10px;
+            }
+    }
+    .contents-detail {
         margin-top: 50px;
         justify-items: center;
         .quote {
-          width: 32px;
-          height: auto;
+            width: 32px;
+            height: auto;
         }
         p {
-          margin-top: 30px;
-          width: 60%;
-          text-align: center;
-          font-size: 32px;
-          color: #191919;
+            margin-top: 30px;
+            width: 60%;
+            text-align: center;
+            font-size: 32px;
+            color: #191919;
         }
         .scroll-contents {
-          margin-top: 30px;
-          img {
+            margin-top: 30px;
+            img {
             margin: 0 30px;
-          }
+            }
         }
-      }
+        }
     }
 
     #make-hair {
@@ -696,36 +742,37 @@ body {
             margin-bottom: 50px;
             justify-items: center;
             h1 {
-              font-size: 80px;
-              color: $font_header_color;
-              text-align: center;
-              margin-bottom: 10px;
-              letter-spacing: 8px;
+                font-size: 80px;
+                color: $font_header_color;
+                text-align: center;
+                margin-bottom: 10px;
+                letter-spacing: 8px;
             }
             hr {
-              width: 10%;
-              color: #E3B6B1;
-              opacity: 100%;
+                width: 10%;
+                color: #E3B6B1;
+                opacity: 100%;
             }
             .subtitle {
-              text-align: center;
-              font-size: 18px;
-              font-family: Avenir;
-              color: #7e6757;
-              margin-top: 10px;
-              width: 40%;
+                text-align: center;
+                font-size: 18px;
+                font-family: Avenir;
+                color: #7e6757;
+                margin-top: 10px;
+                width: 40%;
             }
             button {
-              height: 50px;
-              margin-top: 20px;
-              padding: 0 24px;
-              color: #5e4a49;
-              background-color: transparent;
-              border: 1px solid #5e4a49;
+                height: 50px;
+                margin-top: 20px;
+                padding: 0 24px;
+                color: #5e4a49;
+                background-color: transparent;
+                border: 1px solid #5e4a49;
             }
-          }
+        }
         .make-hair-img {
             display: flex;
+            flex-direction: row;
             justify-content: center;
             gap: 100px;
             margin: 100px 0;
@@ -734,6 +781,10 @@ body {
                 position: relative;
                 top: 0;
                 left: 0;
+                img {
+                    max-width: 100%;
+                    width: auto;
+                }
                 img {
                     width: 100%;
                     height: auto;
@@ -773,8 +824,17 @@ body {
             .makeup-101-inner {
                 margin-top: 50px;
                 display: flex;
+                flex-direction: row;
                 align-items: center;
-                gap: 100px;
+                gap: 10px;
+                .owner{
+                    width: 100%;
+                    margin: 0;
+                    margin-top: -2em;
+                    img{
+                        width: 40em;
+                    }
+                }
                 .item {
                     margin: 30px 0;
                     display: flex;
@@ -782,10 +842,12 @@ body {
                     justify-content: space-between;
                     .item-title {
                         display: flex;
+                        flex-direction: row;
                         gap: 20px;
                         p {
                             font-size: 32px;
                             color: $font_header_color;
+                            width: 15em;
                         }
                         img {
                             width: auto;
@@ -797,85 +859,132 @@ body {
                         font-size: 18px;
                         font-family: Avenir;
                         color: #000;
-                      }
-                      .vector {
+                    }
+                    .vector {
                         width: auto;
                         height: 20px;
                         object-fit: contain;
                         margin-left: 50px;
-                      }
+                    }
                 }
                 button {
+                    width: 30%;
                     height: 50px;
                     padding: 0 24px;
+                    margin-left: -.1em;
                     color: #5e4a49;
                     background-color: transparent;
                     border: 1px solid #5e4a49;
-                  }
+                }
             }
         }
     }
 }
-
-
-/* Form Styles desktop */
-.contact-wrapper{
-    h1{
-        font-size: 3.2em;
+    .diy{
+        h1{
+            color: $font_header_color;
+            font-size: 3em;
+            text-align: center;
+            padding-bottom: 1em;
+        }
+        .video-wrapper{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 40px;
+        }
+        div{
+            margin-top: 2.5em;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            button{
+                background-color: $section_background_color;
+                padding: 1em  1.5em;
+                color: $font_header_color;
+                border: 1px solid $font_header_color;
+                margin: 0 auto;
+            }
+        }
     }
-    p{
-        margin: 0 20%;
-        padding-bottom: 1em;
-    }
-    .form_container{
-        width: 60%;
-        .delimiter{
-            margin: 2em;
-            background-color: $section_background_color;
-            .row{
-                width: 100%;
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: 1;
-                column-gap: 1em;
-                .event{
-                    display: flex;
-                    flex-direction: row;
-                    margin: .3em 0;
-                    justify-content: space-evenly;
-                    background-color: $background;
-                    padding: .5em 0;
-                    label{
-                        width: 80%;
-                        font-size: 1.3em;
+
+    /* Form Styles desktop */
+    .contact-wrapper{
+        background-color: $section_background_color;
+        h1{
+            font-size: 3.2em;
+        }
+        p{
+            margin: 0 20%;
+            padding-bottom: 1em;
+        }
+        .form_container{
+            width: 60%;
+            .delimiter{
+                margin: 2em;
+                background-color: $section_background_color;
+                .row{
+                    background-color: $section_background_color;
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: 1;
+                    column-gap: 1em;
+                    .event{
+                        background-color: $section_background_color;
+                        display: flex;
+                        flex-direction: row;
+                        margin: .3em 0;
+                        justify-content: space-evenly;
+                        padding: .5em 0;
+                        border: 1px solid $font_header_color;
+                        label{
+                            background-color: $section_background_color;
+                            width: 80%;
+                            font-size: 1.3em;
+                        }
+                    }
+                }
+                .event_info{
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: 1;
+                    column-gap: 1em;
+                    .date{
+                        div{
+                            .yes_date{
+                                background-color: $section_background_color;
+                                border: 1px solid $font_header_color;
+                            }
+                        }
+                    }
+                    .event_time{
+                        div{
+                            select{
+                                background-color: $section_background_color;
+                            }
+                        }
+                    }
+                    }
+                }
+            .personal_info{
+                div{
+                    input{
+                        width: 100%;
+                        padding: .8em;
+                        background-color: $section_background_color;
+                        border: 1px solid $font_header_color;
                     }
                 }
             }
-            .event_info{
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: 1;
-                column-gap: 1em;
-                }
-            }
-        .personal_info{
-            div{
-                input{
-                    width: 100%;
-                    padding: .8em;
-                    background-color: $background;
-                }
+        }
+        .button_S{
+            width: 60%;
+            .info_S{
+                width: 20%;
+                font-size: 1.2em;
             }
         }
     }
-    .button_S{
-        width: 60%;
-        .info_S{
-            width: 20%;
-            font-size: 1.2em;
-        }
-    }
-
-}
-
 }
