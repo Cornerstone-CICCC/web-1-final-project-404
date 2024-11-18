@@ -2,9 +2,11 @@
 
 .portfolio{
     text-align: center;
+    background-color: $portfolio_background;
     h1{
         color: $font_header_color;
         padding-top: 1em;
+        background-color: $portfolio_background;
     }
     hr{
         width: 40%;
@@ -15,6 +17,9 @@
     }
     .portfolio_text{
         margin: 0 10%;
+        p{
+            background-color: $portfolio_background;
+        }
     }
     .container{
         width: 100%;
@@ -181,6 +186,10 @@
                         margin: 0;
                         width: auto;
                         align-items: center;
+                        img{
+                            width: 22em;
+                            height: 22em;
+                        }
                     }
                 }
             }

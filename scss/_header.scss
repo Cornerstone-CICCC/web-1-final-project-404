@@ -71,13 +71,9 @@
 .list{
     display: flex;
     flex-direction: column;
-    padding: 1em;
     width: auto;
-    background-color: $background;
+    text-align: center;
     a{
-        background-color: $background;
-        font-size: 20px;
-        margin: 10px auto;
         margin: .5em auto;
         font-size: 20px;
         width: 100px;
