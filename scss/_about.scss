@@ -9,7 +9,7 @@ body {
 
 .about {
   text-align: center;
-  background-color: #fae9e7;
+  background-color: $background;
   // width: 100%;
 }
 
@@ -18,7 +18,7 @@ body {
   color: #725A58;
   margin-bottom: 40px;
   letter-spacing: 13px;
-  background-color: #fae9e7;
+  background-color: $background;
 
 }
 
@@ -31,7 +31,7 @@ h3 {
 }
 .title  {
   color: #E3B6B1;
-  background-color: #fae9e7;
+  background-color: $background;
 }
 
 h1{
