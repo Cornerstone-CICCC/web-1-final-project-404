@@ -1,4 +1,5 @@
 /* Intro Section */
+@import "generals";
 p {
   font-family: Avenir;
   font-weight: 300;
@@ -7,6 +8,7 @@ p {
 .intro {
   text-align: center;
   padding: 24px 0;
+  background-color: $background;
 }
 
 .intro h1 {
@@ -15,13 +17,14 @@ p {
   padding: 24px 0 24px;
   color: #725a58;
   letter-spacing: 13px;
+  background-color: $background;
 }
 
 .intro p {
   font-size: 16px;
   max-width: 356px;
   margin: 32px auto 32px;
-  background-color: #fae9e7;
+  background-color: $background;
 }
 
 .services {
