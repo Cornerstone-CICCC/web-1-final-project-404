@@ -1,9 +1,9 @@
 @import "generals";
 
 footer{
-    background-color: $portfolio_background;
+    background-color: $background;
     div{
-        background-color: $portfolio_background;
+        background-color: $background;
         width: 100%;
         .links{
             display: flex;
@@ -14,11 +14,11 @@ footer{
                 max-width: 100%;
                 width: auto;
                 margin: 0 auto;
-                background-color: $portfolio_background;
+                background-color: $background;
             }
             p{
                 font-size: 1em;
-                background-color: $portfolio_background;
+                background-color: $background;
             }
             .socials{
                 margin: 1em auto;
@@ -26,9 +26,9 @@ footer{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                background-color: $portfolio_background;
+                background-color: $background;
                 img{
-                    background-color: $portfolio_background;
+                    background-color: $background;
                     width: 40px;
                 }
             }
@@ -46,14 +46,14 @@ footer{
             text-align: center;
             padding-top: 1em;
             color: $font_header_color;
-            background-color: $portfolio_background;
+            background-color: $background;
             row-gap: 2em;
             a{
                 text-decoration: none;
                 margin: 0;
                 padding: 0;
                 padding: .3em 0;
-                background-color: $portfolio_background;
+                background-color: $background;
                 color: $font_header_color;
                 font-size: 1.5em;
             }
@@ -96,7 +96,7 @@ footer{
             text-align: center;
             color: $font_header_color;
             margin: 1em;
-            background-color: $portfolio_background;
+            background-color: $background;
             padding-bottom: 2em;
         }
     }

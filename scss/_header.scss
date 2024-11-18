@@ -1,10 +1,10 @@
 @import "generals";
 header{
-    background-color: $portfolio_background;
+    background-color: $background;
 }
 
 .header{
-    background-color: $portfolio_background;
+    background-color: $background;
     padding: 4px 16px;
     display: flex;
     flex-direction: row;
@@ -14,7 +14,7 @@ header{
     align-items: center;
     margin: 0 auto;
     .header_center{
-        background-color: $portfolio_background;
+        background-color: $background;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -24,18 +24,18 @@ header{
         .menu{
             display: block;
             button{
-                background-color: $portfolio_background;
+                background-color: $background;
                 border: none;
                 img{
                     margin-left: -45%;
                     width: 40px;
                     height: 40px;
-                    background-color: $portfolio_background;
+                    background-color: $background;
                 }
             }
         }
         .header_options{
-            background-color: $portfolio_background;
+            background-color: $background;
             flex-direction: column;
             width: auto;
             height: auto;
@@ -44,7 +44,7 @@ header{
             gap: 1em;
             a{
                 display: none;
-                background-color: $portfolio_background;
+                background-color: $background;
                 border-left: 1px solid $header_line;
                 width: 100%;
                 text-align: center;
@@ -61,11 +61,11 @@ header{
                 display: block;
                 width: 40px;
                 height: 30px;
-                background-color: $portfolio_background;
+                background-color: $background;
                 .logo_Ins{
                     margin: 0;
                     margin-top: -.2em;
-                    background-color: $portfolio_background;
+                    background-color: $background;
                     width: 40px;
                 }
             }
@@ -77,11 +77,11 @@ header{
     }
     .logo{
         margin-left: -45%;
-        background-color: $portfolio_background;
+        background-color: $background;
         img{
             width: 96.25px;
             height: 100px;
-            background-color: $portfolio_background;
+            background-color: $background;
         }
     }
 }

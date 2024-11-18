@@ -1,7 +1,7 @@
 @import "generals";
 // home phone version
 body {
-    background-color: $section_background_color;
+    background-color: $background;
     #top {
         .top-img {
             position: relative;
@@ -47,9 +47,11 @@ body {
         }
     }
     #about {
+        background-color: $background;
         padding-top: 2em;
         width: 100%;
         .about-inner {
+            background-color: $background;
             width: 100%;
             display: flex;
             flex-direction: column-reverse;
@@ -60,12 +62,14 @@ body {
                 align-items: center;
                 justify-content: center;
                 margin: 0 auto;
+                background-color: $background;
             img {
                 max-width: 600px;
                 width: auto;
             }
         }
         .about-detail {
+            background-color: $background;
             margin: 0 auto;
             flex-grow: 1;
             display: flex;
@@ -73,6 +77,7 @@ body {
             align-items: center;
             justify-content: center;
             .title {
+                background-color: $background;
                 text-align: center;
                 margin-top: 10px;
                 font-size: 2em;
@@ -108,9 +113,11 @@ body {
     }
     }
     .brands {
+        background-color: $background;
         margin: 40px auto 0 auto;
         width: 90%;
         .title {
+            background-color: $background;
             width: 100%;
             display: flex;
             hr {
@@ -125,6 +132,7 @@ body {
             }
         }
         .brands-logos {
+            background-color: $background;
             margin: 40px auto 0 auto;
             width: 80%;
             display: grid;
@@ -135,6 +143,9 @@ body {
             justify-items: center;
             align-items: center;
             opacity: 60%;
+            img{
+                background-color: $background;
+            }
         }
         }
     }
@@ -211,11 +222,12 @@ body {
     //
     #make-hair {
         padding: 100px 0 40px 0;
-        background-color: $section_background_color;
+        background-color: $background;
         .make-hair-header {
             margin-bottom: 50px;
             justify-items: center;
             h1 {
+                background-color: $background;
                 font-size: 2.5em;
                 color: $font_header_color;
                 text-align: center;
@@ -368,6 +380,7 @@ body {
 
 .diy{
     h1{
+        background-color: $background;
         margin: 0 auto;
         width: 80%;
         text-align: center;
@@ -395,7 +408,7 @@ body {
             width: 90%;
             margin: 1em;
             padding: 1em 1.5em;
-            background: $section_background_color;
+            background-color: $background;
             color: $font_header_color;
             border: 1px solid $font_header_color;
         }
@@ -409,7 +422,7 @@ body {
 
 /* Form Styles */
 .contact-wrapper {
-    background-color: $section_background_color;
+    background-color: $background;
     padding-top: 4em;
     width: 100%;
     margin: 0 auto;
@@ -418,6 +431,7 @@ body {
     align-items: center;
     justify-content: center;
     h1 {
+    background-color: $background;
     text-align: center;
     font-size: 2.5em;
     color: $font_header_color;
@@ -454,11 +468,11 @@ body {
             flex-direction: row;
             margin: 0.3em 0;
             justify-content: space-evenly;
-            background-color: $section_background_color;
+            background-color: $background;
             padding: 0.5em 0;
             border: 1px solid $font_header_color;
             label {
-                background-color: $section_background_color;
+                background-color: $background;
                 width: 80%;
                 font-size: 1.3em;
             }
@@ -467,7 +481,7 @@ body {
         div {
             .yes_date {
             width: 100%;
-            background-color: $section_background_color;
+            background-color: $background;
             border: 1px solid $font_header_color;
             padding: 0.5em 0;
             }
@@ -489,7 +503,7 @@ body {
         .event_time {
             select {
                 padding: 0.8em;
-                background-color: $section_background_color;
+                background-color: $background;
                 border: 1px solid $font_header_color;
                 width: 100%;
             }
@@ -513,7 +527,7 @@ body {
             input {
             width: 100%;
             padding: 0.8em;
-            background-color: $section_background_color;
+            background-color: $background;
             border: 1px solid $font_header_color;
             }
         }
@@ -607,7 +621,7 @@ body {
     }
     #about {
         margin: 0 auto;
-        background-color: $section_background_color;
+        background-color: $background;
         .about-inner {
             margin: 0 auto;
             width: 60%;
@@ -909,7 +923,7 @@ body {
             flex-direction: row;
             justify-content: center;
             button{
-                background-color: $section_background_color;
+                background-color: $background;
                 padding: 1em  1.5em;
                 color: $font_header_color;
                 border: 1px solid $font_header_color;
@@ -921,7 +935,7 @@ body {
 
     /* Form Styles desktop */
     .contact-wrapper{
-        background-color: $section_background_color;
+        background-color: $background;
         h1{
             font-size: 3.2em;
         }
@@ -942,7 +956,7 @@ body {
                     grid-template-rows: 1;
                     column-gap: 1em;
                     .event{
-                        background-color: $section_background_color;
+                        background-color: $background;
                         display: flex;
                         flex-direction: row;
                         margin: .3em 0;
@@ -950,7 +964,7 @@ body {
                         padding: .5em 0;
                         border: 1px solid $font_header_color;
                         label{
-                            background-color: $section_background_color;
+                            background-color: $background;
                             width: 80%;
                             font-size: 1.3em;
                         }
@@ -964,7 +978,7 @@ body {
                     .date{
                         div{
                             .yes_date{
-                                background-color: $section_background_color;
+                                background-color: $background;
                                 border: 1px solid $font_header_color;
                             }
                         }
@@ -972,7 +986,7 @@ body {
                     .event_time{
                         div{
                             select{
-                                background-color: $section_background_color;
+                                background-color: $background;
                             }
                         }
                     }
@@ -983,7 +997,7 @@ body {
                     input{
                         width: 100%;
                         padding: .8em;
-                        background-color: $section_background_color;
+                        background-color: $background;
                         border: 1px solid $font_header_color;
                     }
                 }

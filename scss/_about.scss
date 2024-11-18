@@ -1,10 +1,10 @@
-
+@import "generals";
 
 body {
   font-family: Arial, sans-serif;
   color: #5b4a46;
   max-width: 100%;
-  background-color: #fae9e7;
+  background-color: $background;
 }
 
 .about {
@@ -112,7 +112,7 @@ button:hover {
   // text-underline-position: from-font;
   // text-decoration-skip-ink: none;
   color: #725A58;
-  background-color: #fae9e7;
+  background-color: $background;
 }
 
 .brands h3 {
@@ -122,6 +122,7 @@ button:hover {
   // font-size: 48px;
   line-height: 62.4px;
   color: #5b4a46;
+  background-color: $background;
 }
 
 .brands-logos {
@@ -131,7 +132,7 @@ button:hover {
   justify-items: center;
   align-items: center;
   padding-bottom: 44px;
-  background-color: #fae9e7;
+  background-color: $background;
   // padding: 50px 268px 0px 268px;
 }
 
@@ -140,7 +141,7 @@ button:hover {
   height: auto;
   object-fit: contain;
   opacity: 60%;
-  background-color: #fae9e7;
+  background-color: $background;
 }
 
 @media (max-width: 768px) {
