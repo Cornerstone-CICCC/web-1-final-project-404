@@ -1,0 +1,168 @@
+/* Intro Section */
+p {
+  font-family: Avenir;
+  font-weight: 300;
+}
+
+.intro {
+  text-align: center;
+  padding: 24px 0;
+}
+
+.intro h1 {
+  font-size: 80px;
+  margin: 0 auto;
+  padding: 24px 0 24px;
+  color: #725a58;
+  letter-spacing: 13px;
+}
+
+.intro p {
+  font-size: 16px;
+  max-width: 356px;
+  margin: 32px auto 32px;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 80px;
+  background-color: #fae9e7;
+}
+
+.service-item {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fae9e7;
+}
+
+.services span {
+  background-color: #fae9e7;
+}
+
+.services h2 {
+  background-color: #fae9e7;
+}
+
+.services h3 {
+  background-color: #fae9e7;
+}
+
+.services p {
+  background-color: #fae9e7;
+}
+
+.service-item img {
+  height: 100%;
+}
+
+.service-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  margin-left: 40px;
+  background-color: #fae9e7;
+}
+
+.service-details h2 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #725a58;
+}
+
+.service-details h3 {
+  font-size: 24px;
+}
+
+.service-details p {
+  margin-bottom: 10px;
+}
+
+.service-details p span {
+  // display: inline-block;
+  margin-right: 10px;
+  font-family: Avenir;
+}
+
+button {
+  // padding: 10px 20px;
+  text-align: center;
+  width: 160px;
+  min-width: 160px;
+  height: 62px;
+  font-size: 20px;
+  line-height: 30px;
+  border: 0.8px solid #5b4a46;
+  background: none;
+  color: #5b4a46;
+  cursor: pointer;
+  
+}
+button:hover {
+    color: #fae9e7;
+    background-color: #725a58;
+}
+
+#discription {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  font-family: baskervville;
+}
+
+#mark1 {
+  width: 28px;
+  height: 28px;
+  background: none;
+  padding: 0;
+}
+
+#mark2 {
+  width: 24px;
+  height: 24px;
+  background: none;
+}
+
+@media (max-width: 768px) {
+  .intro {
+    padding: 0;
+  }
+
+  .intro h1 {
+    font-size: 40px;
+    padding-top: 30px;
+  }
+
+  .services {
+    padding: 0 0 20px 0;
+  }
+
+  .service-item {
+    flex-direction: column;
+    padding: 0;
+    padding-bottom: 20px;
+  }
+
+  service-item {
+    width: 100%;
+    height: auto;
+  }
+
+  .service-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .service-details {
+    margin: 0 9%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
