@@ -157,6 +157,14 @@ header{
                     font-weight: 400;
                     border-left: 1px solid $header_line;
                     color: $font_header_color;
+                    &:hover::after {
+                        content: "";
+                        display: block;
+                        width: 100%;
+                        border-bottom: 3px solid $font_header_color;
+                        padding-top: .5em;
+                        margin: 0 auto;
+                    }
                 }
                 .instagram{
                     border-left: 1px solid $header_line;

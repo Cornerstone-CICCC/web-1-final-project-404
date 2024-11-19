@@ -17,6 +17,7 @@ window.onload = function() {
             }, function(error) {
                 console.log('FAILED...', error);
             });
+            document.querySelector('.form-info').reset()
     });
 }
 

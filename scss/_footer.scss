@@ -129,6 +129,10 @@ footer{
                 width: 60%;
                 margin: -1em auto 0 auto;
                 align-items: center;
+                a:hover{
+                    text-decoration: underline;
+                    text-decoration-thickness: 2px;
+                }
             }
         }
     }
