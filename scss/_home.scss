@@ -44,6 +44,10 @@ body {
                 background-color: transparent;
                 border: 1px solid #f8f6f4;
             }
+            button:hover {
+                color:#7e6757;
+                background-color: #f8f6f4;
+            }
         }
     }
     #about {
@@ -109,6 +113,10 @@ body {
                 background-color: transparent;
                 border: 1px solid #5e4a49;
             }
+            button:hover {
+                background-color:#5e4a49;
+                color:#f8f6f4;
+            }
         }
     }
     }
@@ -122,11 +130,14 @@ body {
             display: flex;
             hr {
                 width: 40%;
+                margin: 2rem 0;
+                color: #888888;
             }
             p {
                 margin: 0;
+                font-size: 18px;
                 text-align: center;
-                width: 28%;
+                width: 20%;
                 font-family: Avenir;
                 color: #535353;
             }
@@ -181,6 +192,10 @@ body {
             color: #5e4a49;
             background-color: transparent;
             border: 1px solid #5e4a49;
+        }
+        button:hover {
+            color:#FAE9E7;
+            background: #5e4a49;
         }
     }
     .star-img {
@@ -254,6 +269,10 @@ body {
                 color: #5e4a49;
                 background-color: transparent;
                 border: 1px solid #5e4a49;
+            }
+            button:hover {
+                color: #f8f6f4;
+                background-color: #5e4a49;
             }
         }
         .make-hair-img {
@@ -373,6 +392,10 @@ body {
                     background-color: transparent;
                     border: 1px solid #5e4a49;
                 }
+                button:hover {
+                    color: #FAE9E7;
+                    background-color: #5e4a49;
+                }
             }
         }
     }
@@ -411,6 +434,10 @@ body {
             background-color: $background;
             color: $font_header_color;
             border: 1px solid $font_header_color;
+        }
+        button:hover {
+            color: #f8f6f4;
+            background-color: #5e4a49;
         }
     }
 }
@@ -463,6 +490,9 @@ body {
         .row{
             padding: .6em;
         }
+        .row:focus {
+            border: 1px solid #E3B6B1;
+        }
         .event {
             display: flex;
             flex-direction: row;
@@ -470,20 +500,23 @@ body {
             justify-content: space-evenly;
             background-color: $background;
             padding: 0.5em 0;
-            border: 1px solid $font_header_color;
+            // border: 1px solid #E3B6B1;
             label {
                 background-color: $background;
                 width: 80%;
                 font-size: 1.3em;
             }
+    
         }
+        
         .date {
         div {
             .yes_date {
             width: 100%;
             background-color: $background;
-            border: 1px solid $font_header_color;
+            border: 1px solid #E3B6B1;
             padding: 0.5em 0;
+            outline:none;
             }
             .no_date {
             padding-top: 1em;
@@ -504,9 +537,10 @@ body {
             select {
                 padding: 0.8em;
                 background-color: $background;
-                border: 1px solid $font_header_color;
+                border: 1px solid #E3B6B1;
                 width: 100%;
             }
+        
         .no_date {
             padding-top: 1em;
             display: flex;
@@ -528,7 +562,7 @@ body {
             width: 100%;
             padding: 0.8em;
             background-color: $background;
-            border: 1px solid $font_header_color;
+            border: 1px solid #E3B6B1;
             }
         }
         .call_op {
@@ -573,6 +607,11 @@ body {
         background-color: $section_background_color;
         padding: 0.8em 1em;
         margin: 0 auto;
+    }
+    button:hover {
+        color: #FAE9E7;
+        background-color: #5e4a49;
+
     }
     }
 }
@@ -962,7 +1001,7 @@ body {
                         margin: .3em 0;
                         justify-content: space-evenly;
                         padding: .5em 0;
-                        border: 1px solid $font_header_color;
+                        border: 1px solid #E3B6B1;
                         label{
                             background-color: $background;
                             width: 80%;
@@ -979,7 +1018,10 @@ body {
                         div{
                             .yes_date{
                                 background-color: $background;
-                                border: 1px solid $font_header_color;
+                                
+                            }
+                            .yes_date:focus {
+                                border: 1px solid #E3B6B1;
                             }
                         }
                     }
@@ -998,7 +1040,7 @@ body {
                         width: 100%;
                         padding: .8em;
                         background-color: $background;
-                        border: 1px solid $font_header_color;
+                        // border: 1px solid #E3B6B1;
                     }
                 }
             }
@@ -1012,3 +1054,22 @@ body {
         }
     }
 }
+
+
+.event {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .event label {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+  }
+  
+  
+  
