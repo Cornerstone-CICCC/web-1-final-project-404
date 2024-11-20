@@ -10,18 +10,15 @@ body {
 .about {
   text-align: center;
   background-color: $background;
-  // width: 100%;
 }
 
 .about h1 {
   font-size: 80px;
-  color: #725A58;
+  color: #725a58;
   margin-bottom: 40px;
   letter-spacing: 13px;
   background-color: $background;
-
 }
-
 
 h3 {
   font-size: 48px;
@@ -29,17 +26,13 @@ h3 {
   color: #5b4a46;
   background-color: #fae9e7;
 }
-.title  {
-  color: #E3B6B1;
+.title {
+  color: #e3b6b1;
   background-color: $background;
 }
 
-h1{
-  background-color: #fae9e7;
-}
-
 .intro-about {
-  background: #fae9e7 ;
+  background: #fae9e7;
 }
 
 .about-content {
@@ -90,14 +83,14 @@ h1{
   // padding: 24px 32px;
   font-size: 20px;
   line-height: 30px;
-  border: .8px solid #5b4a46;
+  border: 0.8px solid #5b4a46;
   background: none;
   color: #5b4a46;
   cursor: pointer;
 }
 
 button:hover {
-  background-color:  #5b4a46;
+  background-color: #5b4a46;
   color: #fae9e7;
 }
 
@@ -111,7 +104,7 @@ button:hover {
   text-align: center;
   // text-underline-position: from-font;
   // text-decoration-skip-ink: none;
-  color: #725A58;
+  color: #725a58;
   background-color: $background;
 }
 
@@ -164,7 +157,7 @@ button:hover {
   .about-image {
     order: -1;
     width: 100%;
-     height: auto;
+    height: auto;
   }
 
   .about-image img {
@@ -173,17 +166,16 @@ button:hover {
   }
 
   .intro {
-    padding:0 20px
+    padding: 0 20px;
   }
 
   .about p {
     font-size: 16px;
     line-height: 24px;
-    padding:0 20px
-
+    padding: 0 20px;
   }
 
-  .brands h3{
+  .brands h3 {
     font-size: 33px;
   }
 
@@ -203,7 +195,7 @@ button:hover {
     // padding: 24px 32px;
     font-size: 20px;
     line-height: 30px;
-    border: .8px solid #5b4a46;
+    border: 0.8px solid #5b4a46;
     background: none;
     color: #5b4a46;
     cursor: pointer;

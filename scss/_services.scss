@@ -93,7 +93,7 @@ p {
   font-family: Avenir;
 }
 
-button {
+.services button {
   // padding: 10px 20px;
   text-align: center;
   width: 160px;
@@ -105,11 +105,10 @@ button {
   background: none;
   color: #5b4a46;
   cursor: pointer;
-  
 }
-button:hover {
-    color: #fae9e7;
-    background-color: #725a58;
+.services button:hover {
+  color: #fae9e7;
+  background-color: #725a58;
 }
 
 #discription {
@@ -166,7 +165,7 @@ button:hover {
     margin: 0 9%;
   }
 
-  button {
+  .services button {
     width: 100%;
   }
 }
