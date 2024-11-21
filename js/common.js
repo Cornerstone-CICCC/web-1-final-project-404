@@ -18,7 +18,7 @@ fetch("header.html")
         mywork.href= "../portfolio.html";
         const services = document.createElement("a");
         services.textContent = "Services";
-        services.href = "#";
+        services.href = "../services.html";
         const clases = document.createElement("a");
         clases.textContent = "Clases";
         clases.href = "#";
@@ -27,13 +27,30 @@ fetch("header.html")
         beauty.href = "#";
         const about = document.createElement("a");
         about.textContent = "About";
-        about.href = "#";
+        about.href = "../about.html";
         const contact = document.createElement("a");
         contact.textContent = "Contact";
         contact.href = "#";
+        // socials
+        const socials = document.createElement("div")
+        // whatsap
+        const whasap = document.createElement("img")
+        whasap.src = "../img/header/whasap.png"
+        // insta
+        const instagram = document.createElement("img")
+        instagram.src = "../img/header/instagram.png"
+        //phone
+        const phone = document.createElement("img")
+        phone.src = "../img/header/ph_phone.png"
+        //
+        socials.append(phone,whasap,instagram)
+       
+       
+
+       
 
         //appede elements
-        cont.append(home,mywork,services,clases,beauty,about,contact)
+        cont.append(home,mywork,services,clases,beauty,about,contact,socials)
 
         // click event
         const menu = document.querySelector("#action");

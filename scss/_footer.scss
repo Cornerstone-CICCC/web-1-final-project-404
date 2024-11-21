@@ -3,6 +3,7 @@
 footer{
     background-color: $background;
     div{
+        background-color: $background;
         width: 100%;
         .links{
             display: flex;
@@ -13,16 +14,23 @@ footer{
                 max-width: 100%;
                 width: auto;
                 margin: 0 auto;
+                background-color: $background;
             }
             p{
                 font-size: 1em;
+                background-color: $background;
             }
             .socials{
                 margin: 1em auto;
-                width: 40%;
+                width: 80%;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
+                background-color: $background;
+                img{
+                    background-color: $background;
+                    width: 40px;
+                }
             }
         }
         hr{
@@ -38,43 +46,49 @@ footer{
             text-align: center;
             padding-top: 1em;
             color: $font_header_color;
-            p{
+            background-color: $background;
+            row-gap: 2em;
+            a{
+                text-decoration: none;
                 margin: 0;
                 padding: 0;
                 padding: .3em 0;
+                background-color: $background;
+                color: $font_header_color;
+                font-size: 1.5em;
             }
         }
-        .options_link p:nth-child(1) {
+        .options_link a:nth-child(1) {
             grid-row: 1;
             grid-column: 1;
         }
         
-        .options_link p:nth-child(2) {
+        .options_link a:nth-child(2) {
         grid-row: 2;
         grid-column: 1;
         }
         
-        .options_link p:nth-child(3) {
+        .options_link a:nth-child(3) {
         grid-row: 3;
         grid-column: 1;
         }
         
-        .options_link p:nth-child(4) {
+        .options_link a:nth-child(4) {
         grid-row: 4;
         grid-column: 1;
         }
         
-        .options_link p:nth-child(5) {
+        .options_link a:nth-child(5) {
         grid-row: 1;
         grid-column: 2;
         }
         
-        .options_link p:nth-child(6) {
+        .options_link a:nth-child(6) {
         grid-row: 2;
         grid-column: 2;
         }
         
-        .options_link p:nth-child(7) {
+        .options_link a:nth-child(7) {
         grid-row: 3;
         grid-column: 2;
         }
@@ -82,6 +96,8 @@ footer{
             text-align: center;
             color: $font_header_color;
             margin: 1em;
+            background-color: $background;
+            padding-bottom: 2em;
         }
     }
 }
@@ -110,8 +126,13 @@ footer{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                align-content: center;
                 width: 60%;
+                margin: -1em auto 0 auto;
+                align-items: center;
+                a:hover{
+                    text-decoration: underline;
+                    text-decoration-thickness: 2px;
+                }
             }
         }
     }

@@ -148,6 +148,9 @@
                     &.active{
                         opacity: .5;
                     }
+                    &:hover{
+                        cursor: pointer;
+                    }
                 }
             }
             .phone{
@@ -201,6 +204,10 @@
                 background-color: $portfolio_background;
                 border: 1px solid $font_header_color;
                 color: $font_header_color;
+                &:hover{
+                    background-color:  #5b4a46;
+                    color: #fae9e7;
+                }
             }
         }
     }

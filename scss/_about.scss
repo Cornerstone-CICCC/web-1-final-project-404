@@ -1,37 +1,38 @@
-
+@import "generals";
 
 body {
   font-family: Arial, sans-serif;
   color: #5b4a46;
   max-width: 100%;
+  background-color: $background;
 }
 
 .about {
   text-align: center;
-  // width: 100%;
+  background-color: $background;
 }
 
 .about h1 {
   font-size: 80px;
-  color: #725A58;
+  color: #725a58;
   margin-bottom: 40px;
   letter-spacing: 13px;
-  
-
+  background-color: $background;
 }
-
 
 h3 {
   font-size: 48px;
   line-height: 62.4px;
   color: #5b4a46;
+  background-color: #fae9e7;
 }
-.title  {
-  color: #E3B6B1;
+.title {
+  color: #e3b6b1;
+  background-color: $background;
 }
 
-.intro {
-  background: #fae9e7 ;
+.intro-about {
+  background: #fae9e7;
 }
 
 .about-content {
@@ -82,14 +83,14 @@ h3 {
   // padding: 24px 32px;
   font-size: 20px;
   line-height: 30px;
-  border: .8px solid #5b4a46;
+  border: 0.8px solid #5b4a46;
   background: none;
   color: #5b4a46;
   cursor: pointer;
 }
 
 button:hover {
-  background-color:  #5b4a46;
+  background-color: #5b4a46;
   color: #fae9e7;
 }
 
@@ -103,7 +104,8 @@ button:hover {
   text-align: center;
   // text-underline-position: from-font;
   // text-decoration-skip-ink: none;
-  color: #725A58;
+  color: #725a58;
+  background-color: $background;
 }
 
 .brands h3 {
@@ -113,6 +115,7 @@ button:hover {
   // font-size: 48px;
   line-height: 62.4px;
   color: #5b4a46;
+  background-color: $background;
 }
 
 .brands-logos {
@@ -122,6 +125,7 @@ button:hover {
   justify-items: center;
   align-items: center;
   padding-bottom: 44px;
+  background-color: $background;
   // padding: 50px 268px 0px 268px;
 }
 
@@ -130,6 +134,7 @@ button:hover {
   height: auto;
   object-fit: contain;
   opacity: 60%;
+  background-color: $background;
 }
 
 @media (max-width: 768px) {
@@ -152,7 +157,7 @@ button:hover {
   .about-image {
     order: -1;
     width: 100%;
-     height: auto;
+    height: auto;
   }
 
   .about-image img {
@@ -161,17 +166,16 @@ button:hover {
   }
 
   .intro {
-    padding:0 20px
+    padding: 0 20px;
   }
 
   .about p {
     font-size: 16px;
     line-height: 24px;
-    padding:0 20px
-
+    padding: 0 20px;
   }
 
-  .brands h3{
+  .brands h3 {
     font-size: 33px;
   }
 
@@ -191,7 +195,7 @@ button:hover {
     // padding: 24px 32px;
     font-size: 20px;
     line-height: 30px;
-    border: .8px solid #5b4a46;
+    border: 0.8px solid #5b4a46;
     background: none;
     color: #5b4a46;
     cursor: pointer;

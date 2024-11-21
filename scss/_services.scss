@@ -1,4 +1,5 @@
 /* Intro Section */
+@import "generals";
 p {
   font-family: Avenir;
   font-weight: 300;
@@ -7,6 +8,7 @@ p {
 .intro {
   text-align: center;
   padding: 24px 0;
+  background-color: $background;
 }
 
 .intro h1 {
@@ -15,12 +17,14 @@ p {
   padding: 24px 0 24px;
   color: #725a58;
   letter-spacing: 13px;
+  background-color: $background;
 }
 
 .intro p {
   font-size: 16px;
   max-width: 356px;
   margin: 32px auto 32px;
+  background-color: $background;
 }
 
 .services {
@@ -89,7 +93,7 @@ p {
   font-family: Avenir;
 }
 
-button {
+.services button {
   // padding: 10px 20px;
   text-align: center;
   width: 160px;
@@ -101,11 +105,10 @@ button {
   background: none;
   color: #5b4a46;
   cursor: pointer;
-  
 }
-button:hover {
-    color: #fae9e7;
-    background-color: #725a58;
+.services button:hover {
+  color: #fae9e7;
+  background-color: #725a58;
 }
 
 #discription {
@@ -162,7 +165,7 @@ button:hover {
     margin: 0 9%;
   }
 
-  button {
+  .services button {
     width: 100%;
   }
 }
